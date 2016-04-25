@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="app" ng-controller="dos">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="css/eventos.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+        <script src="js/controller.js"></script>
+	     </head> 
+<body>
+<!-- Navegación -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- icono mostrado en modo móvil-->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>          
+                      <a class="navbar-brand page-scroll" href="index.html">Inicio</a>
+            </div>
+
+            <!--navbar -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="index.php"></a>
+                    </li>
+                     <li>
+                        <a class="page-scroll">REGISTRATE</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="login.html">INGRESA</a>
+                    </li>
+                </ul>
+            </div>
+          </div>
+    </nav>
+<br><br><br><br><br>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="jumbotron">
+            <h1>EVENTOS</h1> 
+            <p></p> 
+          </div>
+        </div>
+
+    <div class="row">
+        <div class="col-md-12">
+        <br><br><br>
+            <div class="panel panel-default">
+                <div class="panel-heading"><h6>ParqueSoft Pasto requiere contratar 25 profesionales y técnicos de diferentes áreas
+                <button type="button" class="btn btn-info" ng-click="func1()">Más información</button></h6>                     
+                    </div>                
+                <div ng-show="showMe1" class="panel-body">
+                    <div class="container">           
+                      <table class="table">
+                        <tbody>
+                          <tr><td>HORA:</td><td>Hasta las 6:00 pm</td></tr>
+                          <tr><td>LUGAR:</td><td>Centro de Emprendimiento Digital y Tecnológico de Pasto Carlos César Puyana - Cra 30 No. 17-00</td></tr>
+                          <tr><td>FECHA DE INICIO:</td><td>12 de febrero de 2016</td></tr>
+                          <tr><td>FECHA DE CIERRE:</td><td>12 de abril de 2016</td></tr>
+                          <tr><td>LINK:</td><td>http://www.parquesoftpasto.com/parquesoft-pasto-busca-25-tecnicos-profesionales</td></tr>
+                        </tbody>
+                      </table>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading"><h6>Oficina Económica y Comercial de España en Colombia requiere arquitectos, ingeniero o afines
+                <button type="button" class="btn btn-info" ng-click="func2()">Más información</button></h6></div> 
+                <div ng-show="showMe2" class="panel-body">
+                    <div class="container">           
+                      <table class="table">
+                        <tbody>
+                          <tr><td>HORA:</td><td>2:00pm a 4:00pm</td></tr>
+                          <tr><td>LUGAR:</td><td>Oficina Económica y Comercial de España en Colombia carrera 9ª # 99 – 07 oficina 901</td></tr>
+                          <tr><td>FECHA DE INICIO:</td><td> 3 de marzo de 2016</td></tr>
+                          <tr><td>FECHA DE CIERRE:</td><td>22 de mayo de 2016</td></tr>
+                          <tr><td>LINK:</td><td>http://www.convocatoriasybecas.info/2016/04/oficina-economica-y-comercial-espanola.html</td></tr>
+                        </tbody>
+                      </table>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading"><h6>Grupo Español de Ingeniería requiere profesional en Administración de Empresas
+                 <button type="button" class="btn btn-info" ng-click="func3()">Más información</button></h6></div>
+                 <div ng-show="showMe3" class="panel-body">
+                    <div class="container">           
+                      <table class="table">
+                        <tbody>
+                          <tr><td>HORA:</td><td>Hasta las 6:00 pm</td></tr>
+                          <tr><td>LUGAR:</td><td>Centro de Emprendimiento Digital y Tecnológico de Pasto Carlos César Puyana - Cra 30 No. 17-00</td></tr>
+                          <tr><td>FECHA DE INICIO:</td><td>14 de abril de 2016</td></tr>
+                          <tr><td>FECHA DE CIERRE:</td><td>10 de julio de 2016</td></tr>
+                          <tr><td>LINK:</td><td>http://www.convocatoriasybecas.info/2016/04/grupo-espanol-necesita-administradores.html</td></tr>
+                        </tbody>
+                      </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; tu sitio web 2014</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Politicas de privacidad</a>
+                        </li>
+                        <li><a href="#">Terminos de uso</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+            <script src="js/jquery.js"></script>  
+            <script src="js/jquery-ui.js"></script>
+            <script src="js/login.js"></script> 
+        </body>
+</html>

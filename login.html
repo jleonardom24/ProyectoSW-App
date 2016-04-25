@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es" ng-app>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" href="css/login.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+        <script src="js/controller.js"></script>
+	     </head>    
+         <body>
+        <div id="container">
+            <div id="logo">
+                <img src="img/mundocente.png" class="img-responsive img-circle" alt="" >
+            </div>
+            <div id="loginbox">            
+                <form id="loginform" action="index.html">
+    				<p>Introduzca usuario y contraseña para continuar</p>
+                    <div class="input-group input-sm">
+                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                        <input class="form-control" id="username" placeholder="Usuario" type="text" required>
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                        <input class="form-control" id="password" placeholder="Contraseña" type="password" required>
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="form-actions clearfix">                      
+ 						<input class="btn btn-block btn-primary btn-default" value="Acceder" type="submit">
+                    </div>
+                    <div class="footer-login">                             
+                    </div>
+                </form>
+                </div>
+                <button type="button" class="btn btn-info" btn-responsive href="index.html" onClick="window.location.href='index.html'">inicio</button>
+        	</div>
+        <script src="js/jquery.js"></script>  
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/login.js"></script> 
+</body>
+</html>
