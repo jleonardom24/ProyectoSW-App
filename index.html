@@ -21,7 +21,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>          
-                      <a class="navbar-brand page-scroll" href="#inicio">Inicio</a>
+                      <a class="topbar-icon logomun" href="#inicio"><img src="img/logo1.png" id="logomun"></a>
             </div>
 
             <!--navbar -->
@@ -30,9 +30,6 @@
                     <li class="hidden">
                         <a href="index.php"></a>
                     </li>
-                     <li>
-                        <a class="page-scroll">REGISTRATE</a>
-                    </li>
                     <li>
                         <a class="page-scroll" href="login.html">INGRESA</a>
                     </li>
@@ -40,7 +37,7 @@
                         <a class="page-scroll" href="#publicaciones">PUBLICACIONES</a>
                     </li>                    
                     <li>
-                        <a class="page-scroll" href="#contact">CONTACTANOS</a>
+                        <a class="page-scroll" href="#contact">CONTÁCTANOS</a>
                     </li>
                 </ul>
             </div>
@@ -49,13 +46,78 @@
 
 
     <!-- Cabecera -->
-    <header id="inicio">
-    	<figure class=container-logo>
-        	<img src="img/mundocente.png" class="img-responsive img-circle" alt="">
-        </figure>     	
-    </header>
-              
+    <a name="about"></a>         
     
+    <div class="intro-header" id="inicio">
+        <div class="container">
+        <figure class=container-logo>
+            <img src="img/mundocente.png" class="img-responsive" alt="">
+        </figure>     
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h3>En Mundocente ofrecemos la información que necesita un docente universitario para tener las mejores oportunidades de crecimiento laboral y personal de acuerdo con sus intereses profesionales</h3>
+                        <hr class="intro-divider">
+                        <ul class="list-inline intro-social-buttons">
+                             <li>
+                                <a href="#registro" class="btn btn-default btn-lg" data-toggle="modal" data-target="#registro"><i class="fa fa-users fa-fw"></i> <span class="network-name">Registrate</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+           
+    <!-- MODALS-->   
+
+    <div class="modal fade" id="registro">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label=""><span>&times;</span></button>
+                    <h4 class="modal-title">Registro</h4>
+                </div>
+                <div class="modal-body"></div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Tu nombre *" id="name" required>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Tu Email *" id="email" required>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control" placeholder="Tu Teléfono *" id="phone" required>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" placeholder="Tu clave *" id="password" required>
+                                        <p class="help-block text-danger"></p>
+                                    </div>                                    
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="col-lg-12 text-center">
+                                    <div id="success"></div>
+                                    <button type="submit" class="btn btn-xl">Registrar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>        
+    </div>
+    
+
+
         
     <!-- PUBLICACIONES-->
     <section id="publicaciones" class="bg-light-gray">
@@ -201,5 +263,8 @@
 	<script src="js/bootstrap.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/cbpAnimatedHeader.js"></script>
+    <script src="js/jquery.js"></script>  
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/login.js"></script> 
 </body>
 </html>

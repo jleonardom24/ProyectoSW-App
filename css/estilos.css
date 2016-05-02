@@ -41,7 +41,7 @@ h3,
 h4,
 h5,
 h6 {
-    text-transform: uppercase;
+    
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
@@ -86,7 +86,7 @@ h6 {
 }
 
 .navbar-default .navbar-toggle:hover /*hamburguesa al pasar mouse*/{
-    background-color: rgb(0,15,110);
+    background-color: rgb(45,78,189);
 }
 
 .navbar-default .nav li a { /*items navvar*/
@@ -133,26 +133,18 @@ h6 {
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.5em;
     }
+
+    #logomun{
+    width: 60%;
 }
 
-header {
-    text-align: center;
-    background-color: rgb(32,0,32);
-    background-position: center center;
-    background-repeat: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    width: 100%;
-    height: auto;
 }
 
 .container-logo{
 
-    background-color: rgb(32,0,32);
+    background-color: transparent;
     margin: 0 auto;
-    width: 25%;
+    width: 35%;
     margin-top: 5%;
 }
 
@@ -204,6 +196,11 @@ section h3.section-subheading {
     section {
         padding: 150px 0;
     }
+
+    #registro{
+        padding: 5%;
+    }s
+
 }
 
 @media (max-width:767px) {
@@ -219,6 +216,17 @@ section h3.section-subheading {
     margin: 0 auto;
     width: 40%;
     margin-top: 5%;
+    }
+
+    #logomun{
+    width: 15%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    }
+
+    #registro{
+        padding: 65px 0;
     }
 
 }
@@ -321,6 +329,33 @@ section#contact .section-heading {
     color: #fff;
 }
 
+.form-control{
+    margin-left: 5px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+.form-group {
+    margin-bottom: 5%;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+}
+
+#registro .form-group input.form-control {
+    width: 92%;
+    margin: 0 auto;
+}
+
+.form-control:focus {
+    border-color: blue;
+    box-shadow: none;
+}
+
+
 section#contact .form-group {
     margin-bottom: 25px;
 }
@@ -392,4 +427,70 @@ ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
     background-color: rgb(124,225,225);
+}
+
+/*header*/
+
+.intro-header {
+    padding-top: 50px; 
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../img/header/header2.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 0%;
+    padding-bottom: 15%;
+}
+
+.intro-divider {
+    width: 94%;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 17%;
+    }
+
+    .intro-message > h3 {
+        font-size: 17px;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 94%;
+    }
+
+
+}
+
+.network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.topbar .topbar-icon {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
 }

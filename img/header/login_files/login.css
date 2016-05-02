@@ -137,7 +137,7 @@ hr {
 
 
 
-.navbar-default .nav { /*items navvar*/
+.navbar-default .nav li a { /*items navvar*/
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
@@ -147,14 +147,10 @@ hr {
 
 .navbar-default .nav li a:hover,  /*items navvar al pasar mouse*/
 .navbar-default .nav li a:focus {
+
     outline: 0;
-    color: rgb(124,225,225);
+    color: #95EFE3;
 }
-
-.navbar-default .navbar-brand {
-    color: white;
-}
-
 
 @media(min-width:768px){
     .navbar-default {
